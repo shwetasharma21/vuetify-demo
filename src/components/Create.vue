@@ -87,6 +87,9 @@ export default {
       const { name, email, dob, desig, dept } = this;
       const user = { name, email, dob, desig, dept };
       console.log(user);
+
+      this.$store.commit("addEmployee", user);
+
       this.name = "";
       this.email = "";
       this.dob = "";

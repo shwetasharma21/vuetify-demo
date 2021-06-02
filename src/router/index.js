@@ -7,6 +7,10 @@ Vue.use(VueRouter);
 
 const routes = [
   {
+    path: "/",
+    redirect: "/create",
+  },
+  {
     path: "/records",
     name: "Records",
     component: Records,
